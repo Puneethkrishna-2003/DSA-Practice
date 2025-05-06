@@ -19,3 +19,20 @@
 
 🧠 Write your implementation below this comment:
 */
+
+let arr = [1, 2, 3, 4, 5];
+
+let index = 2;
+
+const leftRotateD = (index,arr)=>{
+    let temp = [];
+    for(let i = index; i<arr.length; i++ ){
+        temp.push(arr[i]);
+    }
+    for(let j = 0; j <index;j++){
+        temp.push(arr[j])
+    }
+    return temp
+}
+
+console.log(leftRotateD(index,arr))
